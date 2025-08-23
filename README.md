@@ -1,40 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# 🛒 MyStore — Next.js E-commerce App
 
-## Getting Started
+A simple **E-commerce web app** built with **Next.js, React, and TailwindCSS**.  
+This project demonstrates product listing, cart functionality, checkout, and mock authentication using local storage.
 
-First, run the development server:
+---
 
+## 🚀 Features
+- ✅ Browse products (fetched from [FakeStore API](https://fakestoreapi.com/))  
+- ✅ Search & filter by category  
+- ✅ Sort products (Price, A–Z, Z–A)  
+- ✅ Add to cart / remove from cart  
+- ✅ Update product quantity  
+- ✅ Checkout flow with order summary  
+- ✅ Mock login/signup with localStorage  
+- ✅ Thank-you page after order  
+- ✅ Responsive UI with TailwindCSS  
+
+---
+
+## 🖼️ Screenshots
+| Home Page | Products Page | Cart Page |
+|-----------|---------------|-----------|
+| ![Home](https://via.placeholder.com/400x200) | ![Products](https://via.placeholder.com/400x200) | ![Cart](https://via.placeholder.com/400x200) |
+
+---
+
+## 🛠️ Tech Stack
+- [Next.js](https://nextjs.org/) (React Framework)
+- [Tailwind CSS](https://tailwindcss.com/) (Styling)
+- [FakeStore API](https://fakestoreapi.com/) (Products API)
+- LocalStorage (for mock auth + cart persistence)
+
+---
+
+## ⚡ Getting Started (Local Setup)
+
+### 1️⃣ Clone the repository
 ```bash
+git clone https://github.com/prakhar-solanki/mystore.git
+cd mystore
+2️⃣ Install dependencies
+npm install
+
+3️⃣ Run the dev server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
 ```
+App will be running at 👉 http://localhost:3000
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4️⃣ Build for production
+npm run build
+npm start
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+📦 Deployment
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Deployed easily with Vercel
+.
+Every push to main branch auto-deploys the latest version.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+👨‍💻 Author
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+Prakhar Solanki
+🔗 GitHub
+ | LinkedIn
