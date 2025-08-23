@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import LoadingSpinner from "../components/LoadingSpinner";
 
-export default function ProductsPage() {
+function ProductsPage() {
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [categories, setCategories] = useState([]);
@@ -14,7 +14,7 @@ export default function ProductsPage() {
   const [sortOption, setSortOption] = useState("none");
   const [loading, setLoading] = useState(true);
 
-  // 1) Fetch products & categories once
+  // Fetch products & categories once
   useEffect(() => {
     let cancelled = false;
 
@@ -51,25 +51,21 @@ export default function ProductsPage() {
     };
   }, []);
 
-  // 2) Apply filters + sorting whenever dependencies change
+  // Apply filters + sorting whenever dependencies change
   useEffect(() => {
     let result = products;
 
-    // category
     if (selectedCategory !== "all") {
       result = result.filter((p) => p.category === selectedCategory);
     }
 
-    // search (title)
     const query = search.trim().toLowerCase();
     if (query) {
       result = result.filter((p) => p.title.toLowerCase().includes(query));
     }
 
-    // price range
     result = result.filter((p) => p.price >= minPrice && p.price <= maxPrice);
 
-    // sorting
     if (sortOption === "low-high") {
       result = [...result].sort((a, b) => a.price - b.price);
     } else if (sortOption === "high-low") {
@@ -82,16 +78,17 @@ export default function ProductsPage() {
 
     setFilteredProducts(result);
   }, [search, selectedCategory, minPrice, maxPrice, sortOption, products]);
+
   if (loading) {
     return <LoadingSpinner />;
   }
+
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-6">Products</h1>
+      <h1 className="text-3xl font-bold mb-6">Products Page</h1>
 
       {/* Filters */}
       <div className="flex flex-col gap-4 md:flex-row md:items-center mb-6">
-        {/* Search */}
         <input
           type="text"
           placeholder="Search products…"
@@ -100,7 +97,6 @@ export default function ProductsPage() {
           className="border px-3 py-2 rounded w-full md:w-1/3"
         />
 
-        {/* Category */}
         <select
           value={selectedCategory}
           onChange={(e) => setSelectedCategory(e.target.value)}
@@ -114,7 +110,6 @@ export default function ProductsPage() {
           ))}
         </select>
 
-        {/* Price range */}
         <div className="flex items-center gap-2">
           <span className="text-sm text-gray-700">Price:</span>
           <input
@@ -134,7 +129,6 @@ export default function ProductsPage() {
           />
         </div>
 
-        {/* Sort */}
         <select
           value={sortOption}
           onChange={(e) => setSortOption(e.target.value)}
@@ -181,3 +175,5 @@ export default function ProductsPage() {
     </div>
   );
 }
+
+export default ProductsPage;
