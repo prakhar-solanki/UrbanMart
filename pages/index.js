@@ -30,11 +30,11 @@ export default function Home() {
   return (
     <>
       {/* ✅ SEO Meta */}
-      <SEO title="Home" description="Welcome to MyStore - your one-stop shop for trendy products" />
+      <SEO title="Home" description="Welcome to UrbanMart - your one-stop shop for trendy products" />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-blue-500 to-purple-600 text-white text-center py-20">
-        <h1 className="text-4xl md:text-6xl font-bold mb-4">Welcome to MyStore</h1>
+        <h1 className="text-4xl md:text-6xl font-bold mb-4">Welcome to UrbanMart</h1>
         <p className="text-lg md:text-xl mb-6">Your one-stop shop for trendy products</p>
         <button className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
           Shop Now
