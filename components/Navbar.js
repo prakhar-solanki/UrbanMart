@@ -10,7 +10,7 @@ export default function Navbar() {
 
   return (
     <nav className="bg-blue-600 p-4 text-white flex justify-between items-center">
-      <Link href="/" className="text-xl font-bold">MyStore</Link>
+      <Link href="/" className="text-xl font-bold">UrbanMart</Link>
       <div className="space-x-6 flex items-center">
         <Link href="/products">Products</Link>
         <Link href="/cart" className="relative">
