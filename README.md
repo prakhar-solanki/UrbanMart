@@ -1,4 +1,4 @@
-# 🛒 MyStore — Next.js E-commerce App
+# 🛒 UrbanMart — Next.js E-commerce App
 
 A simple **E-commerce web app** built with **Next.js, React, and TailwindCSS**.  
 This project demonstrates product listing, cart functionality, checkout, and mock authentication using local storage.
