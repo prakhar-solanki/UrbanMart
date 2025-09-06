@@ -37,7 +37,7 @@ This project demonstrates product listing, cart functionality, checkout, and moc
 
 ### 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/prakhar-solanki/mystore.git
+git clone https://github.com/prakhar-solanki/UrbanMart.git
 cd mystore
 2️⃣ Install dependencies
 npm install
