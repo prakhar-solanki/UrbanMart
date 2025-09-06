@@ -8,7 +8,7 @@ export default function Layout({ children }) {
       {/* Navbar at top */}
        <nav className="bg-blue-600 text-white px-6 py-4 flex justify-between items-center shadow-md">
         <Link href="/" className="text-2xl font-bold">
-          MyStore
+          UrbanMart
         </Link>
         <div className="space-x-6">
           <Link href="/">Home</Link>
@@ -23,7 +23,7 @@ export default function Layout({ children }) {
 
       {/* Footer at bottom */}
        <footer className="bg-gray-800 text-white text-center p-4">
-        © {new Date().getFullYear()} MyStore. All rights reserved.
+        © {new Date().getFullYear()}UrbanMart . All rights reserved.
       </footer>
     </div>
   );
