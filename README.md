@@ -52,6 +52,9 @@ App will be running at 👉 http://localhost:3000
 npm run build
 npm start
 
+## 🔗 Live Demo
+[Click here to view UrbanMart](https://your-live-deployed-link.com)
+
 📦 Deployment
 
 Deployed easily with Vercel
