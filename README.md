@@ -53,7 +53,7 @@ npm run build
 npm start
 
 ## 🔗 Live Demo
-[Click here to view UrbanMart](https://your-live-deployed-link.com)
+[Click here to view UrbanMart]([https://your-live-deployed-link.com](https://mystore-po3b-dvl7weiub-prakhar-solankis-projects.vercel.app))
 
 📦 Deployment
 
